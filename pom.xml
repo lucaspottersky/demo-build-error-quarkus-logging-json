@@ -15,6 +15,9 @@
         <quarkus.platform.version>3.29.2</quarkus.platform.version>
         <skipITs>true</skipITs>
         <surefire-plugin.version>3.5.4</surefire-plugin.version>
+
+        <quarkus-logging-json.version>3.4.0</quarkus-logging-json.version>
+
     </properties>
 
     <dependencyManagement>
@@ -30,6 +33,15 @@
     </dependencyManagement>
 
     <dependencies>
+		<dependency>
+			<groupId>io.quarkiverse.loggingjson</groupId>
+			<artifactId>quarkus-logging-json</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-jackson</artifactId>
+		</dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-arc</artifactId>
